@@ -16,6 +16,9 @@
 */
 -->
 <resources>
+    <!-- Pixel pitch of the device. um/px -->
+    <item name="pixel_pitch" format="float" type="dimen">63.77</item>
+    
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">10dp</dimen>
 
