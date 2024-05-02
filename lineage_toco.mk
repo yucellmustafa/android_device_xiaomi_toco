@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from toco device
 $(call inherit-product, device/xiaomi/toco/device.mk)
 
+# Inherit MiuiCamera if exist
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
