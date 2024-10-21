@@ -44,6 +44,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+        'vendor/lib64/libalRnBRT_GL_GBWRAPPER.so': blob_fixup()
+        .add_needed('libui_shim.so'),
     'vendor/lib64/libFaceDetectpp-0.5.2.so': blob_fixup()
         .replace_needed('libmegface.so', 'libfacedet.so'),
     ('vendor/lib64/libhvx_interface.so', 'vendor/lib64/libVDSuperPhotoAPI.so'): blob_fixup()
