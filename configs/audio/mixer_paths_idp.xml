@@ -475,6 +475,8 @@
     <ctl name="Mi_Ultrasound ReportNone" value="0"/>
     <!-- for mius end -->
 
+    <ctl name="TFA Profile" value="powerdown" />
+
     <path name="deep-buffer-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -597,6 +599,9 @@
     </path>
 
     <path name="ultrasound-proximity-output speaker">
+    </path>
+
+    <path name="ultrasound-proximity-output speaker-and-headphones">
     </path>
 
     <path name="ultrasound-proximity-input">
@@ -809,11 +814,6 @@
         <ctl name="EC Reference Channels" value="Two"/>
     </path>
 
-    <path name="echo-reference-voip handset">
-        <ctl name="AUDIO_REF_EC_UL10 MUX" value="WSA_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="One"/>
-    </path>
-
     <path name="echo-reference-voip headphones">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="RX_CDC_DMA_RX_0" />
         <ctl name="EC Reference Channels" value="Two"/>
@@ -843,18 +843,6 @@
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="RX_CDC_DMA_RX_0" />
     </path>
 
-    <path name="echo-reference-voip headphones">
-        <ctl name="EC Reference Channels" value="One"/>
-        <ctl name="AUDIO_REF_EC_UL10 MUX" value="RX_CDC_DMA_RX_0" />
-    </path>
-
-    <path name="echo-reference-voip display-port">
-        <ctl name="AUDIO_REF_EC_UL10 MUX" value="DISPLAY_PORT" />
-    </path>
-
-    <path name="echo-reference-voip headphones-44.1">
-        <ctl name="AUDIO_REF_EC_UL10 MUX" value="RX_CDC_DMA_RX_0" />
-    </path>
 
     <path name="echo-reference-voip speaker">
         <ctl name="EC Reference Channels" value="One"/>
@@ -2743,6 +2731,10 @@
         <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia2" value="1" />
     </path>
 
+    <path name="hifi-record">
+        <ctl name="MultiMedia2 Mixer TX_CDC_DMA_TX_3" value="1" />
+    </path>
+
     <path name="hifi-record usb-headset-mic">
         <ctl name="MultiMedia2 Mixer USB_AUDIO_TX" value="1" />
     </path>
@@ -2832,66 +2824,6 @@
     </path>
 
     <path name="incall_music_uplink speaker-safe-and-bt-a2dp">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink handset">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink handset-hac">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink display-port">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink bt-sco">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink bt-sco-wb">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink speaker-and-display-port">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink afe-proxy">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink usb-headphones">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink usb-headset">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink speaker-and-usb-headphones">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink headphones">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink speaker-and-headphones">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink speaker-and-bt-sco">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink voice-tty-hco-handset">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink speaker-and-bt-a2dp">
         <path name="incall_music_uplink" />
     </path>
 
