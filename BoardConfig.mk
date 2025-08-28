@@ -9,6 +9,9 @@ include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/toco
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-toco/BoardConfig.mk
+
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
