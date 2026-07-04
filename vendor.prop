@@ -16,3 +16,7 @@ persist.vendor.cp.taper_term_mv=7000
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=540|1810|95
+
+# Enable or disable ScrollOptimizer globally
+persist.sys.perf.scroll_opt = true
+persist.sys.perf.scroll_opt.heavy_app = 2

@@ -4,6 +4,7 @@
       "Name": "CPULittleClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
+        "1804800",
         "1612800",
         "1248000"
       ],
@@ -14,9 +15,11 @@
       "Name": "CPULittleClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
+        "1804800",
         "1612800",
         "1248000",
-        "576000"
+        "576000",
+        "300000"
       ],
       "ResetOnInit": true
     },
@@ -24,6 +27,7 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
       "Values": [
+        "2208000",
         "979200",
         "1939200",
         "1555200"
@@ -35,10 +39,12 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
       "Values": [
-        "979200",
+        "2208000",
+        "1939200",
         "1555200",
-        "1248000",
-        "652800"
+        "979200",
+        "652800",
+        "300000"
       ],
       "ResetOnInit": true
     },
@@ -224,7 +230,7 @@
       "Values": [
         "1",
         "0"
-      ],
+      ]
     },
     {
       "Name": "PowerHALMainState",
@@ -319,19 +325,19 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 1000,
-      "Value": "979200"
+      "Value": "2208000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "979200"
+      "Value": "2208000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "1612800"
+      "Value": "1804800"
     },
     {
       "PowerHint": "LAUNCH",
