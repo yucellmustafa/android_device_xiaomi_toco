@@ -29,6 +29,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/lib/hw/audio.primary.sm6150.so', 'vendor/lib/libaudioroute_ext.so'): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/etc/init/init.batterysecret.rc': blob_fixup()
         .regex_replace(' +seclabel u:r:batterysecret:s0\n', ''),
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
